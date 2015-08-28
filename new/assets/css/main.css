@@ -1,0 +1,226 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+h2 {
+  margin: 0;
+}
+
+body {
+  font-weight: 300;
+  background-color: #2B2B2B;
+  color: #333333;
+  font: "Open Sans", sans-serif;
+}
+
+#uxMain [uxhead] {
+  display: block;
+  clear: both;
+  background-image: url("../images/img0.jpg");
+  background-size: 100%;
+  background-position: bottom center;
+  background-color: #2B2B2B;
+  padding: 0 10px;
+}
+
+#uxMain [uxhead] div.logo {
+  display: inline-block;
+  float: left;
+}
+
+#uxMain [uxhead] div.logo h3 {
+  display: inline-block;
+  line-height: 40px;
+  color: #F2F2F2;
+  margin: 0;
+}
+
+#uxMain [uxhead] div.headline {
+  display: block;
+  clear: both;
+  position: relative;
+  top: 20%;
+  padding: 0 5%;
+}
+
+#uxMain [uxhead] div.headline h1, #uxMain [uxhead] div.headline p {
+  display: inline-block;
+  text-shadow: 2px 2px 5px #000;
+  color: #F2F2F2;
+  margin: 0;
+}
+
+#uxMain [uxmain] {
+  display: block;
+  clear: both;
+  background-color: #F0F0F0;
+  box-shadow: 0 0 150px 0 #111;
+}
+
+#uxMain [uxmain] div.heading-content div.tagline-bar {
+  background-color: #1D94E4;
+  padding: 0 5%;
+  text-align: right;
+}
+
+#uxMain [uxmain] div.heading-content div.tagline-bar p {
+  float: left;
+  color: #F2F2F2;
+  padding: 1% 0;
+  margin: 0;
+}
+
+#uxMain [uxmain] div.heading-content div.tagline-bar button {
+  cursor: pointer;
+  background-color: #F0F0F0;
+  border: none;
+  padding: 2% 5%;
+  margin-top: -2%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 {
+  padding: 5%;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 span {
+  font-size: 25px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 div.section-1-content {
+  margin-top: 20px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div {
+  display: inline-block;
+  margin: 0 5px;
+  width: 30%;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div i {
+  font-size: 25px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div p {
+  font-weight: 700;
+  margin: 0;
+  font-size: 15px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div span {
+  font-size: 14px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic2 {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 5%;
+  min-height: 350px;
+}
+
+#uxMain [uxmain] div.heading-content article.artic2.setb {
+  background-image: url("../images/img3.jpg");
+  background-position: left center;
+  background-size: 100%;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
+#uxMain [uxfoot] {
+  display: block;
+  clear: both;
+  padding: 0 10px;
+}
+
+#uxMain [uxfoot] div {
+  color: #F2F2F2;
+}
+
+#uxMain [uxfoot] div span {
+  line-height: 40px;
+  float: left;
+}
+
+nav.navigation-row {
+  display: inline-block;
+  float: right;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+nav.navigation-row ul.nav-menu {
+  padding: 0;
+  margin: 0;
+}
+
+nav.navigation-row ul.nav-menu li {
+  display: inline;
+  padding: 5px;
+  cursor: pointer;
+  list-style: none;
+}
+
+nav.navigation-row ul.nav-menu li a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+nav.navigation-row ul.nav-menu li a:hover {
+  color: #777777;
+}
+
+nav.navigation-row ul.nav-menu li a:active {
+  color: #555555;
+}
+
+.lighter-text {
+  color: #555555;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #FFFFFF;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+  p {
+    font-size: 12px !important;
+  }
+  #uxMain div.headline h1 {
+    font-size: 20px !important;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 {
+    padding: 5% 5% 3%;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 span {
+    font-size: 15px;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 div.section-1-content {
+    margin-top: 10px;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div {
+    display: inline-block;
+    margin: 0 5px 15px;
+    width: 100%;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div i {
+    font-size: 15px;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div p {
+    font-weight: 700;
+    font-size: 13px;
+  }
+  #uxMain [uxmain] div.heading-content article.artic1 div.section-1-content div span {
+    font-size: 12px;
+  }
+  #uxMain [uxfoot] {
+    text-align: center;
+  }
+  #uxMain [uxfoot] div > span {
+    float: none;
+  }
+  nav.navigation-row.bottom-nav {
+    float: none;
+  }
+}

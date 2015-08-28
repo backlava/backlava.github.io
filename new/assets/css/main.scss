@@ -1,0 +1,284 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+$open-sans: 'Open Sans', sans-serif;
+$bg-scheme-1: #2B2B2B;
+$bg-scheme-2: #DE1B1B;
+$bg-scheme-3: #F0F0F0;
+$bg-scheme-4: #E9E581;
+$font-color-1: #333333;
+$font-color-2: #555555;
+$font-color-3: #777777;
+$font-color-4: #F2F2F2;
+$font-color-5: #ADADAD;
+
+h2 {
+  margin: 0;
+}
+
+@mixin block-display {
+  display: block;
+  clear: both;
+}
+
+@mixin round-corner($r) {
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+  -khtml-border-radius: $r;
+  border-radius: $r;
+}
+
+@mixin inline-display {
+  display: inline;
+}
+
+@mixin inline-block-display {
+  display: inline-block;
+}
+
+@mixin light-text {
+  font-weight: 300;
+}
+
+@mixin heavy-text {
+  font-weight: 700;
+}
+
+body {
+  @include light-text;
+  background-color: $bg-scheme-1;
+  color: $font-color-1;
+  font: $open-sans;
+}
+
+#uxMain {
+  [uxhead] {
+    @include block-display;
+    background-image: url("../images/img0.jpg");
+    background-size: 100%;
+    background-position: bottom center;
+    background-color: $bg-scheme-1;
+    padding: 0 10px;
+
+    div.logo {
+      @include inline-block-display;
+      float: left;
+
+      h3 {
+        @include inline-block-display;
+        line-height: 40px;
+        color: $font-color-4;
+        margin: 0;
+      }
+    }
+
+    div.headline {
+      @include block-display;
+      position: relative;
+      top: 20%;
+      padding: 0 5%;
+
+      h1, p {
+        @include inline-block-display;
+        text-shadow: 2px 2px 5px #000;
+        color: $font-color-4;
+        margin: 0;
+      }
+    }
+  }
+
+  [uxmain] {
+    @include block-display;
+    background-color: $bg-scheme-3;
+    box-shadow: 0 0 150px 0 #111;
+
+    div.heading-content {
+
+      div.tagline-bar {
+        background-color: #1D94E4;
+        padding: 0 5%;
+        text-align: right;
+
+        p {
+          float: left;
+          color: $font-color-4;
+          padding: 1% 0;
+          margin: 0;
+        }
+
+        button {
+          cursor: pointer;
+          background-color: #F0F0F0;
+          border: none;
+          padding: 2% 5%;
+          margin-top: -2%;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+
+      article.artic1 {
+        padding: 5%;
+
+        span {
+          font-size: 25px;
+        }
+
+        div.section-1-content {
+          margin-top: 20px;
+
+          div {
+            @include inline-block-display;
+            margin: 0 5px;
+            width: 30%;
+
+            i {
+              font-size: 25px;
+            }
+            p {
+              @include heavy-text;
+              margin: 0;
+              font-size: 15px;
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      article.artic2 {
+        position: relative;
+        background-color: #FFFFFF;
+        padding: 5%;
+        min-height: 200px;
+      }
+
+      article.artic2.seta {
+      }
+
+      article.artic2.setb {
+        background-image: url("../images/img3.jpg");
+        background-position: left center;
+        background-size: 100%;
+        background-color: #FFFFFF;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  [uxfoot] {
+    @include block-display;
+    padding: 0 10px;
+
+    div {
+      color: $font-color-4;
+
+      span {
+        line-height: 40px;
+        float: left;
+      }
+    }
+  }
+}
+
+nav.navigation-row {
+  @include inline-block-display;
+  float: right;
+  line-height: 40px;
+  vertical-align: top;
+
+  ul.nav-menu {
+    padding: 0;
+    margin: 0;
+
+    li {
+      @include inline-display;
+      padding: 5px;
+      cursor: pointer;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $font-color-4;
+      }
+      a:hover {
+        color: $font-color-3;
+      }
+      a:active {
+        color: $font-color-2;
+      }
+    }
+  }
+}
+
+.lighter-text {
+  color: $font-color-2;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid #FFFFFF;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 400px) {
+  p {
+    font-size: 12px !important;
+  }
+
+  #uxMain {
+    div.headline {
+      h1 {
+        font-size: 20px !important;
+      }
+    }
+
+    [uxmain] {
+      div.heading-content {
+        article.artic1 {
+          padding: 5% 5% 3%;
+
+          span {
+            font-size: 15px;
+          }
+
+          div.section-1-content {
+            margin-top: 10px;
+
+            div {
+              @include inline-block-display;
+              margin: 0 5px 15px;
+              width: 100%;
+
+              i {
+                font-size: 15px;
+              }
+              p {
+                @include heavy-text;
+                font-size: 13px;
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    [uxfoot] {
+      text-align: center;
+      div > span {
+        float: none;
+      }
+    }
+  }
+
+  nav.navigation-row.bottom-nav {
+    float: none;
+  }
+}
