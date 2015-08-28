@@ -3,7 +3,7 @@ h2 { margin: 0; }
 
 body { font-weight: 300; background-color: #2B2B2B; color: #333333; font: "Open Sans", sans-serif; }
 
-#uxMain [uxhead] { display: block; clear: both; background-image: url("../images/img1.jpg"); background-size: 100%; background-position: bottom center; background-color: #2B2B2B; padding: 0 10px; }
+#uxMain [uxhead] { display: block; clear: both; background-image: url("../images/img5.jpg"); background-size: 100%; background-position: bottom center; background-color: #2B2B2B; padding: 0 10px; }
 #uxMain [uxhead] div.logo { display: inline-block; float: left; }
 #uxMain [uxhead] div.logo h3 { display: inline-block; line-height: 40px; color: #F2F2F2; margin: 0; }
 #uxMain [uxhead] div.headline { display: block; clear: both; position: relative; top: 20%; padding: 0 5%; }
