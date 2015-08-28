@@ -53,7 +53,7 @@ body {
 #uxMain {
   [uxhead] {
     @include block-display;
-    background-image: url("../images/img5.jpg");
+    background-image: url("../images/img6.jpg");
     background-size: 100%;
     background-position: bottom center;
     background-color: $bg-scheme-1;
@@ -74,12 +74,13 @@ body {
     div.headline {
       @include block-display;
       position: relative;
-      top: 20%;
+      text-align: center;
+      top: 10%;
       padding: 0 5%;
 
       h1, p {
         @include inline-block-display;
-        text-shadow: 2px 2px 5px #000;
+        //text-shadow: 2px 2px 5px #000;
         color: $font-color-4;
         margin: 0;
       }
@@ -89,32 +90,32 @@ body {
   [uxmain] {
     @include block-display;
     background-color: $bg-scheme-3;
-    box-shadow: 0 0 150px 0 #111;
+    box-shadow: 0 0 150px 0 #1a7ec3;
 
     div.heading-content {
 
-      div.tagline-bar {
-        background-color: #1D94E4;
-        padding: 0 5%;
-        text-align: right;
-
-        p {
-          float: left;
-          color: $font-color-4;
-          padding: 1% 0;
-          margin: 0;
-        }
-
-        button {
-          cursor: pointer;
-          background-color: #F0F0F0;
-          border: none;
-          padding: 2% 5%;
-          margin-top: -2%;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
-        }
-      }
+      //div.tagline-bar {
+      //  background-color: #1D94E4;
+      //  padding: 0 5%;
+      //  text-align: right;
+      //
+      //  p {
+      //    float: left;
+      //    color: $font-color-4;
+      //    padding: 1% 0;
+      //    margin: 0;
+      //  }
+      //
+      //  button {
+      //    cursor: pointer;
+      //    background-color: #F0F0F0;
+      //    border: none;
+      //    padding: 2% 5%;
+      //    margin-top: -2%;
+      //    border-top-left-radius: 5px;
+      //    border-top-right-radius: 5px;
+      //  }
+      //}
 
       article.artic1 {
         text-align: center;
@@ -169,6 +170,9 @@ body {
 
   [uxfoot] {
     @include block-display;
+    background-color: #333;
+    height: 40px;
+    width: 100%;
     padding: 0 10px;
 
     div {
@@ -212,27 +216,37 @@ nav.navigation-row {
   }
 }
 
+nav.navigation-row.bottom-nav {
+  ul.nav-menu {
+    li {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 .lighter-text {
   color: $font-color-2;
 }
 
 .arrow-left {
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-right:10px solid #FFFFFF;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #FFFFFF;
 }
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 400px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
   p {
     font-size: 12px !important;
   }
 
   #uxMain {
     div.headline {
+      top: 5% !important;
+
       h1 {
         font-size: 20px !important;
       }
@@ -281,5 +295,13 @@ nav.navigation-row {
 
   nav.navigation-row.bottom-nav {
     float: none;
+
+    ul.nav-menu {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

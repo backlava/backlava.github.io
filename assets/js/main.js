@@ -4,9 +4,9 @@
 
   // init
   if(bodywidth <= 800) {
-    $("[uxhead]").height(bodywidth / 2);
+    $("[uxhead]").height(bodywidth / 1.5);
   } else {
-    $("[uxhead]").height(bodyheight / 2);
+    $("[uxhead]").height(bodyheight / 1.5);
   }
 
   // on resize
@@ -15,9 +15,9 @@
     var bodywidth = $(document).width();
 
     if(bodywidth <= 800) {
-      $("[uxhead]").height(bodywidth / 2);
+      $("[uxhead]").height(bodywidth / 1.5);
     } else {
-      $("[uxhead]").height(bodyheight / 2);
+      $("[uxhead]").height(bodyheight / 1.5);
     }
   });
 
